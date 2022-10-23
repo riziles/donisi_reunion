@@ -1,0 +1,53 @@
+<html>
+<script src="https://jsuites.net/v4/jsuites.js"></script>
+<link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
+ 
+<form id='myForm' action="mailto:michaelwriley@gmail.com" method="post" enctype="text/plain">
+<div class='section-container'>
+ 
+    <div class='row'>
+        <div class='column'>
+            <div class='form-group'>
+                <label>Name</label><br>
+                <input type='text' name='name' value='Roger Fredson'>
+            </div>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='column'>
+            <div class='form-group'>
+                <label>Profession</label><br>
+                <input type='text' name='profession' value='Singer'>
+            </div>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='column'>
+            <div class='form-group'>
+                <label>Gender</label><br>
+                <select name='gender'>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+                </select>
+            </div>
+        </div>
+    </div>
+ 
+    <br>
+ 
+    <div class='row'>
+        <div class='column'>
+            <div class='form-group'>
+                <input type='button' value='Save profile' onclick='myTracker.resetTracker()'>
+            </div>
+        </div>
+    </div>
+ 
+</div>
+</form>
+ 
+<script>
+var myTracker = jSuites.tracker(document.getElementById('myForm'));
+</script>
+ 
+</html>
