@@ -17,13 +17,14 @@
             body,
             div,
             form,
+            select,
             input,
             p {
                 padding: 0;
                 margin: 0;
                 outline: none;
                 font-family: Roboto, Arial, sans-serif;
-                font-size: 16px;
+                font-size: 24px;
                 color: #666;
                 line-height: 28px;
             }
@@ -34,13 +35,14 @@
             body,
             div,
             form,
+            select,
             input,
             p {
                 padding: 0;
                 margin: 0;
                 outline: none;
                 font-family: Roboto, Arial, sans-serif;
-                font-size: 30px;
+                font-size: 24px;
                 color: #666;
                 line-height: 28px;
             }
@@ -155,13 +157,30 @@
             <div>
                 <h4>Please rank in order the reunion experience you would like to have:</h4>
                 <div class="question-answer">
-                    <label for="cars">Choose a car:</label>
+                    <label for="bbq">2-3 hour party/BBQ at a house</label>
 
-                        <select name="cars" id="cars">
-                            <option value="volvo">Volvo</option>
-                            <option value="saab">Saab</option>
-                            <option value="mercedes">Mercedes</option>
-                            <option value="audi">Audi</option>
+                        <select name="bbq" id="bbq">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                </div>
+                <div class="question-answer">
+                    <label for="event-space">2-3 hour party at an event space</label>
+
+                        <select name="event-space" id="event-space">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                </div>
+                <div class="question-answer">
+                    <label for="weekend">Weekend away (separate housing options with planned activities)</label>
+
+                        <select name="weekend" id="weekend">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
                         </select>
                 </div>
             </div>
