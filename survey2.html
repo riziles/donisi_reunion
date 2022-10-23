@@ -1,150 +1,192 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Parent Engagement Survey</title>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet'
+        type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <style>
-      html, body {
-      min-height: 100%;
-      }
-      body, div, form, input, p { 
-      padding: 0;
-      margin: 0;
-      outline: none;
-      font-family: Roboto, Arial, sans-serif;
-      font-size: 16px;
-      color: #666;
-      line-height: 28px;
-      }
-      @media screen and (max-width: 600px) {
-        div.example {
-            font-size: 30px;
+        html,
+        body {
+            min-height: 100%;
         }
-      }
-      h1, h4 {
-      font-weight: 400;
-      }
-      h4 {
-      margin: 25px 0 5px;
-      color: #095484;
-      }
-      .testbox {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: inherit;
-      padding: 3px;
-      }
-      form {
-      width: 100%;
-      padding: 20px;
-      background: #fff;
-      box-shadow: 0 2px 5px #ccc; 
-      }
-      input {
-      width: auto;
-      margin-right: 15px;
-      vertical-align: middle;
-      }
-      .question-answer label {
-      display: block;
-      }
-      .btn-block {
-      margin-top: 20px;
-      text-align: center;
-      }
-      button {
-      width: 150px;
-      padding: 10px;
-      border: none;
-      -webkit-border-radius: 5px; 
-      -moz-border-radius: 5px; 
-      border-radius: 5px; 
-      background-color: #095484;
-      font-size: 16px;
-      color: #fff;
-      cursor: pointer;
-      }
-      button:hover {
-      background-color: #0666a3;
-      }
+
+        @media screen and (max-width: 600px) {
+
+            body,
+            div,
+            form,
+            input,
+            p {
+                padding: 0;
+                margin: 0;
+                outline: none;
+                font-family: Roboto, Arial, sans-serif;
+                font-size: 16px;
+                color: #666;
+                line-height: 28px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+
+            body,
+            div,
+            form,
+            input,
+            p {
+                padding: 0;
+                margin: 0;
+                outline: none;
+                font-family: Roboto, Arial, sans-serif;
+                font-size: 16px;
+                color: #666;
+                line-height: 28px;
+            }
+        }
+
+        h1,
+        h4 {
+            font-weight: 400;
+        }
+
+        h4 {
+            margin: 25px 0 5px;
+            color: #095484;
+        }
+
+        .testbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: inherit;
+            padding: 3px;
+        }
+
+        form {
+            width: 100%;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 5px #ccc;
+        }
+
+        input {
+            width: auto;
+            margin-right: 15px;
+            vertical-align: middle;
+        }
+
+        .question-answer label {
+            display: block;
+        }
+
+        .btn-block {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        button {
+            width: 150px;
+            padding: 10px;
+            border: none;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            background-color: #095484;
+            font-size: 16px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0666a3;
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <img src="donisipic.jpg" alt="Sexy Bitches">
     <div class="testbox">
-      <form form name="survey2" method="POST" data-netlify="true">
-        <h1>Donisi Reunion Survey</h1>
-        <div>
-            <div class="question-answer">
-                <label><h4>Your Name: </h4><input type="text" name="name" /></label>
+        <form form name="survey2" method="POST" data-netlify="true">
+            <h1>Donisi Reunion Survey</h1>
+            <div>
+                <div class="question-answer">
+                    <label>
+                        <h4>Your Name: </h4><input type="text" name="name" />
+                    </label>
+                </div>
             </div>
-        </div>
-        <div>
-            <div class="question-answer">
-              <label><h4>Your eMail: </h4><input type="text" name="email" /></label>
+            <div>
+                <div class="question-answer">
+                    <label>
+                        <h4>Your eMail: </h4><input type="text" name="email" />
+                    </label>
+                </div>
             </div>
-        </div>
-        <div>
-          <h4>Where are you most likely to come to a family reunion?</h4>
-          <div class="question-answer">
-            <label><input type="radio" value="none" name="meet" />Massachusetts (Boston area)</label>
-            <label><input type="radio" value="none" name="meet" />New England (coast or lake, Cape Cod or other) </label>
-            <label><input type="radio" value="none" name="meet" />Colorado </label>
-            <label><input type="radio" value="none" name="meet" />I am not interested in a family reunion at this time</label>
-          </div>
-        </div>
-        <div>
-          <h4>How involved have you been with a parent group(s) at your child's school?</h4>
-          <div class="question-answer">
-            <label><input type="radio" value="none" name="num-people" />1-2</label>
-            <label><input type="radio" value="none" name="num-people" />3-4</label>
-            <label><input type="radio" value="none" name="num-people" />4+</label>
-          </div>
-        </div>
-        <div>
-          <h4>Are there kids in your clan?</h4>
-          <div class="question-answer">
-            <label><input type="radio" value="none" name="kids" />Yes</label>
-            <label><input type="radio" value="none" name="kids" />No</label>
-          </div>
-        </div>
-        <label><h4>What are the ages of your children? </h4><input type="text" name="child-ages" /></label>
-        <div>
-          <h4>In the past year, how often have you helped out at your child's school?</h4>
-          <div class="question-answer">
-            <label><input type="radio" value="none" name="name" />Almost never</label>
-            <label><input type="radio" value="none" name="name" />Once or twice per year</label>
-            <label><input type="radio" value="none" name="name" />Every few months</label>
-            <label><input type="radio" value="none" name="name" />Monthly</label>
-            <label><input type="radio" value="none" name="name" />Weekly or more</label>
-          </div>
-        </div>
-        <div>
-          <h4>How involved have you been in fundraising efforts at your child's school?</h4>
-          <div class="question-answer">
-            <label><input type="radio" value="none" name="fundraising" />Not at all involved</label>
-            <label><input type="radio" value="none" name="fundraising" />A little involved</label>
-            <label><input type="radio" value="none" name="fundraising" />Somewhat involved</label>
-            <label><input type="radio" value="none" name="nafundraisingme" />Quite involved</label>
-            <label><input type="radio" value="none" name="fundraising" />Extremely involved</label>
-          </div>
-        </div>
-        <div>
-          <h4>In the past year, how often have you visited your child's school?</h4>
-          <div class="question-answer">
-            <label><input type="radio" value="none" name="visited" />Almost never</label>
-            <label><input type="radio" value="none" name="visited" />Once or twice per year</label>
-            <label><input type="radio" value="none" name="visited" />Every few months</label>
-            <label><input type="radio" value="none" name="visited" />Monthly</label>
-            <label><input type="radio" value="none" name="visited" />Weekly or more</label>
-          </div>
-        </div>
-        <div class="btn-block">
-          <button type="submit" href="/">Send</button>
-        </div>
-      </form>
+            <div>
+                <h4>Where are you most likely to come to a family reunion?</h4>
+                <div class="question-answer">
+                    <label><input type="radio" value="none" name="meet" />Massachusetts (Boston area)</label>
+                    <label><input type="radio" value="none" name="meet" />New England (coast or lake, Cape Cod or other)</label>
+                    <label><input type="radio" value="none" name="meet" />Colorado </label>
+                    <label><input type="radio" value="none" name="meet" />I am not interested in a family reunion at
+                        this time</label>
+                </div>
+            </div>
+            <div>
+                <h4>How involved have you been with a parent group(s) at your child's school?</h4>
+                <div class="question-answer">
+                    <label><input type="radio" value="none" name="num-people" />1-2</label>
+                    <label><input type="radio" value="none" name="num-people" />3-4</label>
+                    <label><input type="radio" value="none" name="num-people" />4+</label>
+                </div>
+            </div>
+            <div>
+                <h4>Are there kids in your clan?</h4>
+                <div class="question-answer">
+                    <label><input type="radio" value="none" name="kids" />Yes</label>
+                    <label><input type="radio" value="none" name="kids" />No</label>
+                </div>
+            </div>
+            <label>
+                <h4>What are the ages of your children? </h4><input type="text" name="child-ages" />
+            </label>
+            <div>
+                <h4>In the past year, how often have you helped out at your child's school?</h4>
+                <div class="question-answer">
+                    <label><input type="radio" value="none" name="name" />Almost never</label>
+                    <label><input type="radio" value="none" name="name" />Once or twice per year</label>
+                    <label><input type="radio" value="none" name="name" />Every few months</label>
+                    <label><input type="radio" value="none" name="name" />Monthly</label>
+                    <label><input type="radio" value="none" name="name" />Weekly or more</label>
+                </div>
+            </div>
+            <div>
+                <h4>How involved have you been in fundraising efforts at your child's school?</h4>
+                <div class="question-answer">
+                    <label><input type="radio" value="none" name="fundraising" />Not at all involved</label>
+                    <label><input type="radio" value="none" name="fundraising" />A little involved</label>
+                    <label><input type="radio" value="none" name="fundraising" />Somewhat involved</label>
+                    <label><input type="radio" value="none" name="nafundraisingme" />Quite involved</label>
+                    <label><input type="radio" value="none" name="fundraising" />Extremely involved</label>
+                </div>
+            </div>
+            <div>
+                <h4>In the past year, how often have you visited your child's school?</h4>
+                <div class="question-answer">
+                    <label><input type="radio" value="none" name="visited" />Almost never</label>
+                    <label><input type="radio" value="none" name="visited" />Once or twice per year</label>
+                    <label><input type="radio" value="none" name="visited" />Every few months</label>
+                    <label><input type="radio" value="none" name="visited" />Monthly</label>
+                    <label><input type="radio" value="none" name="visited" />Weekly or more</label>
+                </div>
+            </div>
+            <div class="btn-block">
+                <button type="submit" href="/">Send</button>
+            </div>
+        </form>
     </div>
-  </body>
+</body>
+
 </html>
