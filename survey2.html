@@ -19,6 +19,8 @@
             form,
             select,
             input,
+            label,
+            option,
             p {
                 padding: 0;
                 margin: 0;
@@ -37,6 +39,8 @@
             form,
             select,
             input,
+            label,
+            option,
             p {
                 padding: 0;
                 margin: 0;
@@ -129,26 +133,27 @@
             <div>
                 <h4>Where are you most likely to come to a family reunion?</h4>
                 <div class="question-answer">
-                    <label><input type="radio" value="none" name="meet" />Massachusetts (Boston area)</label>
-                    <label><input type="radio" value="none" name="meet" />New England (coast or lake, Cape Cod or other)</label>
-                    <label><input type="radio" value="none" name="meet" />Colorado </label>
-                    <label><input type="radio" value="none" name="meet" />I am not interested in a family reunion at
+                    <label><input type="radio" value="Boston" name="meet" />Massachusetts (Boston area)</label>
+                    <label><input type="radio" value="NE" name="meet" />New England (coast or lake, Cape Cod or
+                        other)</label>
+                    <label><input type="radio" value="CO" name="meet" />Colorado </label>
+                    <label><input type="radio" value="Nowhere" name="meet" />I am not interested in a family reunion at
                         this time</label>
                 </div>
             </div>
             <div>
-                <h4>How involved have you been with a parent group(s) at your child's school?</h4>
+                <h4>How may people would be in your party?</h4>
                 <div class="question-answer">
-                    <label><input type="radio" value="none" name="num-people" />1-2</label>
-                    <label><input type="radio" value="none" name="num-people" />3-4</label>
-                    <label><input type="radio" value="none" name="num-people" />4+</label>
+                    <label><input type="radio" value="1-2" name="num-people" />1-2</label>
+                    <label><input type="radio" value="3-4" name="num-people" />3-4</label>
+                    <label><input type="radio" value="5+" name="num-people" />4+</label>
                 </div>
             </div>
             <div>
                 <h4>Are there kids in your clan?</h4>
                 <div class="question-answer">
-                    <label><input type="radio" value="none" name="kids" />Yes</label>
-                    <label><input type="radio" value="none" name="kids" />No</label>
+                    <label><input type="radio" value="yes" name="kids" />Yes</label>
+                    <label><input type="radio" value="no" name="kids" />No</label>
                 </div>
             </div>
             <label>
@@ -159,51 +164,71 @@
                 <div class="question-answer">
                     <label for="bbq">2-3 hour party/BBQ at a house</label>
 
-                        <select name="bbq" id="bbq">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select>
+                    <select name="bbq" id="bbq">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
                 </div>
                 <div class="question-answer">
                     <label for="event-space">2-3 hour party at an event space</label>
 
-                        <select name="event-space" id="event-space">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select>
+                    <select name="event-space" id="event-space">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
                 </div>
                 <div class="question-answer">
                     <label for="weekend">Weekend away (separate housing options with planned activities)</label>
 
-                        <select name="weekend" id="weekend">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select>
+                    <select name="weekend" id="weekend">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
                 </div>
             </div>
             <div>
-                <h4>How involved have you been in fundraising efforts at your child's school?</h4>
+                <h4>Please rank dates in order of best to worse options for a reunion:</h4>
                 <div class="question-answer">
-                    <label><input type="radio" value="none" name="fundraising" />Not at all involved</label>
-                    <label><input type="radio" value="none" name="fundraising" />A little involved</label>
-                    <label><input type="radio" value="none" name="fundraising" />Somewhat involved</label>
-                    <label><input type="radio" value="none" name="nafundraisingme" />Quite involved</label>
-                    <label><input type="radio" value="none" name="fundraising" />Extremely involved</label>
+                    <label for="July 1-2">July 1-2</label>
+
+                    <select name="July 1-2" id="July 1-2">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="question-answer">
+                    <label for="June 24- 25">June 24- 25</label>
+
+                    <select name="June 24- 25" id="June 24- 25">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="question-answer">
+                    <label for="July 15-16">July 15-16</label>
+
+                    <select name="July 15-16" id="July 15-16">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
                 </div>
             </div>
             <div>
-                <h4>In the past year, how often have you visited your child's school?</h4>
+                <h4>Would you come to a family reunion?</h4>
                 <div class="question-answer">
-                    <label><input type="radio" value="none" name="visited" />Almost never</label>
-                    <label><input type="radio" value="none" name="visited" />Once or twice per year</label>
-                    <label><input type="radio" value="none" name="visited" />Every few months</label>
-                    <label><input type="radio" value="none" name="visited" />Monthly</label>
-                    <label><input type="radio" value="none" name="visited" />Weekly or more</label>
+                    <label><input type="radio" value="yes" name="coming" />Most likely yes</label>
+                    <label><input type="radio" value="no" name="coming" />Most likely no</label>
                 </div>
             </div>
+            <label>
+                <h4>Message: </h4><input type="text" name="message" style="width: 500px; height: 70px;"/>
+            </label>
             <div class="btn-block">
                 <button type="submit" href="/">Send</button>
             </div>
