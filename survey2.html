@@ -12,7 +12,7 @@
             min-height: 100%;
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (min-width: 600px) {
 
             body,
             div,
@@ -153,13 +153,16 @@
                 <h4>What are the ages of your children? </h4><input type="text" name="child-ages" />
             </label>
             <div>
-                <h4>In the past year, how often have you helped out at your child's school?</h4>
+                <h4>Please rank in order the reunion experience you would like to have:</h4>
                 <div class="question-answer">
-                    <label><input type="radio" value="none" name="name" />Almost never</label>
-                    <label><input type="radio" value="none" name="name" />Once or twice per year</label>
-                    <label><input type="radio" value="none" name="name" />Every few months</label>
-                    <label><input type="radio" value="none" name="name" />Monthly</label>
-                    <label><input type="radio" value="none" name="name" />Weekly or more</label>
+                    <label for="cars">Choose a car:</label>
+
+                        <select name="cars" id="cars">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </select>
                 </div>
             </div>
             <div>
