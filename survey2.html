@@ -71,7 +71,16 @@
     <div class="testbox">
       <form form name="survey2" method="POST" data-netlify="true">
         <h1>Donisi Reunion Survey</h1>
-        <label>Your Name: <input type="text" name="name" /></label>
+        <div>
+            <div class="question-answer">
+                <label><h4>Your Name: </h4><input type="text" name="name" /></label>
+            </div>
+        </div>
+        <div>
+            <div class="question-answer">
+              <label><h4>Your eMail: </h4><input type="text" name="email" /></label>
+            </div>
+        </div>
         <div>
           <h4>Where are you most likely to come to a family reunion?</h4>
           <div class="question-answer">
@@ -84,23 +93,19 @@
         <div>
           <h4>How involved have you been with a parent group(s) at your child's school?</h4>
           <div class="question-answer">
-            <label><input type="radio" value="none" name="involved" />Not at all involved</label>
-            <label><input type="radio" value="none" name="involved" />A little involved</label>
-            <label><input type="radio" value="none" name="involved" />Somewhat involved</label>
-            <label><input type="radio" value="none" name="involved" />Quite involved</label>
-            <label><input type="radio" value="none" name="involved" />Extremely involved</label>
+            <label><input type="radio" value="none" name="num-people" />1-2</label>
+            <label><input type="radio" value="none" name="num-people" />3-4</label>
+            <label><input type="radio" value="none" name="num-people" />4+</label>
           </div>
         </div>
         <div>
-          <h4>In the past year, how often have you discussed your child's school with other parents from the school?</h4>
+          <h4>Are there kids in your clan?</h4>
           <div class="question-answer">
-            <label><input type="radio" value="none" name="discussed" />Almost never</label>
-            <label><input type="radio" value="none" name="discussed" />Once or twice per year</label>
-            <label><input type="radio" value="none" name="discussed" />Every few months</label>
-            <label><input type="radio" value="none" name="discussed" />Monthly</label>
-            <label><input type="radio" value="none" name="discussed" />Weekly or more</label>
+            <label><input type="radio" value="none" name="kids" />Yes</label>
+            <label><input type="radio" value="none" name="kids" />No</label>
           </div>
         </div>
+        <label><h4>What are the ages of your children? </h4><input type="text" name="child-ages" /></label>
         <div>
           <h4>In the past year, how often have you helped out at your child's school?</h4>
           <div class="question-answer">
