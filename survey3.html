@@ -25,19 +25,19 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('/w3images/parallax1.jpg');
+  background-image: url('donisipic_big.jpg');
   min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url("/w3images/parallax2.jpg");
+  background-image: url("donisipic_big.jpg");
   min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-  background-image: url("/w3images/parallax3.jpg");
+  background-image: url("donisipic_big.jpg");
   min-height: 400px;
 }
 
@@ -208,10 +208,8 @@ body, html {
                     <label><input type="radio" value="no" name="coming" />Most likely no</label>
                 </div>
             </div>
-            <label>
-                <h4>Message: </h4><input type="text" name="message" style="width: 500px; height: 70px;" />
-            </label>
-            <div class="btn-block">
+            <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+            <div class="btn-block"><br>
                 <button type="submit">Send</button>
             </div>
         </form>
